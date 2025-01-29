@@ -1,42 +1,30 @@
 # LeetCode Notes
 
-This repository contains Jupyter notebooks with coding exercises and their solutions. Below is a summary of the exercises and key skills demonstrated.
+This repository contains Jupyter notebooks with coding exercises and their solutions, inspired by and adapted from Reuven M. Lerner's "Python Workout: 50 ten-minute exercises". Below is a summary of the exercises and key skills demonstrated.
 
-## Digital Handling Exercises
+## Digital Handling Skills
 
-### Exercise 01: Number Guessing Game
-**Skills:**
-- Using `input()` for user input
-- Converting strings to integers with `int()`
-- Generating random numbers with `random.randint()`
-- Implementing while loops with break conditions
-- Input validation using `isdigit()`
-- String manipulation with `replace()`
-
-### Exercise 02: Sum a Series of Numbers
-**Skills:**
-- Using `*args` for variable argument lists
-- Iterating over tuples with for loops
-- Using the `sum()` function with initial values
-- Basic arithmetic operations
-
-### Exercise 03: Calculate Average Running Time
-**Skills:**
-- Error handling with try-except blocks
-- Working with floating point numbers
-- Using Python 3.8's assignment expressions (:=)
-- Input validation and type conversion
-- Basic arithmetic for averages
-
-### Exercise 04: Convert Hexadecimal to Decimal
-**Skills:**
-- String manipulation with `reversed()`
-- Using `enumerate()` for index-value pairs
-- ASCII value conversion with `ord()`
-- String methods: `isdigit()`, `upper()`
-- Number base conversion
-- Mathematical operations with powers
-- Alternative conversion using `int(x, 16)`
+| Skill | Description | Example |
+|-------|-------------|---------|
+| User Input | 使用input()取得使用者輸入 | `user_guess = input('Guess a number: ')` |
+| Integer Conversion | 將字串轉換為整數 | `int(user_input)` |
+| Random Generation | 產生隨機整數 | `random.randint(0, 100)` |
+| While Loop Control | 帶有中斷條件的迴圈 | `while True: ... break` |
+| Input Validation | 驗證數字輸入 | `user_input.isdigit()` |
+| String Replacement | 字串替換操作 | `input_str.replace('.', '')` |
+| Variable Arguments | 接收可變數量參數 | `def my_sum(*numbers):` |
+| Tuple Iteration | 遍歷元組元素 | `for n in numbers:` |
+| Sum Initialization | 帶初始值的求和 | `sum([1,2,3], start=0)` |
+| Error Handling | 例外處理機制 | `try: ... except Exception:` |
+| Float Conversion | 浮點數轉換與運算 | `float(run_time)` |
+| Walrus Operator | 海象運算子(:=) | `while (run_time := input(...)):` |
+| String Reversal | 反轉字串順序 | `reversed(hexnum)` |
+| Index-Value Pairs | 取得索引值配對 | `enumerate(reversed(...))` |
+| ASCII Conversion | 字元ASCII值轉換 | `ord(char.upper()) - ord('A')` |
+| Hexadecimal Check | 十六進位字元驗證 | `digit.isdigit()` 與 `upper()` |
+| Base Calculation | 進位制數學運算 | `16 ** power` |
+| Built-in Conversion | 內建進位轉換函式 | `int('1A', 16)` |
+| Arithmetic Average | 基礎算術平均計算 | `total_time / number_of_runs` |
 
 ## Video References
 
