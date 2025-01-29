@@ -19,7 +19,7 @@ This repository contains Jupyter notebooks with coding exercises and their solut
 | String Reversal | Reverse string order | `reversed(str)` |
 | Index-Value Pairs | Get index-value pairs | `enumerate(reversed(...))` |
 | ASCII Conversion | Character ASCII value conversion | `ord(char.upper())` |
-| Digital Check and Conversion | Check if digit and Convert uppercase | `digit.isdigit()` and `upper()` |
+| Digital Check | Check if digit | `digit.isdigit()` |
 | Built-in Conversion | Built-in base conversion function | `int('1A', 16)` |
 
 ## String Handling Skills
@@ -35,6 +35,23 @@ This repository contains Jupyter notebooks with coding exercises and their solut
 | String Sorting | Sort characters in string | `sorted('python')` |
 | Case-insensitive Sort | Sort with key function | `sorted(s, key=str.lower)` |
 
+## List & Tuple Skills
+
+| Skill | Description | Example |
+|-------|-------------|---------|
+| Sequence Slicing | Get first/last elements | `seq[:1] + seq[-1:]` |
+| List Memory Allocation | Dynamic memory management | `list.append(item)` will add memory space when the existing space is not enough |
+| Tuple Efficiency | Fixed-size memory allocation | `tuple_data = (1,2,3)` is fixed size when it is created |
+| Container Checking | Check if container is empty | `if not items:` |
+| Dictionary Merging | Combine dictionaries | `{**d1, **d2}` |
+| Type Checking | Verify data type | `isinstance(item, dict)` |
+| Advanced Sorting | Multi-key sorting | `sorted(data, key=lambda x: (x[1], x[0]))` |
+| Itemgetter Usage | Extract specific elements | `operator.itemgetter(1, 0)` |
+| Formatted Output | Control string width/precision | `f'{last:12s}{first:10s}{grade:.1f}'` |
+| Set Operations | Get unique elements | `set('independence')` |
+| Element Counting | Count occurrences | `word.count(letter)` |
+| Counter Usage | Efficient frequency counting | `Counter('independence').most_common(1)` |
+
 ## Video References
 
 Each exercise includes a video tutorial for additional learning:
@@ -44,6 +61,11 @@ Each exercise includes a video tutorial for additional learning:
 - Exercise 05: https://youtu.be/v4FxKzrBmNY
 - Exercise 06: https://youtu.be/BwN0MegOAsY
 - Exercise 08: https://youtu.be/wBn9m8wad0Y
+- Exercise 09: https://youtu.be/teBer27fyek
+- Exercise 10: https://youtu.be/dGSrJzQHiqc
+- Exercise 11: https://youtu.be/nFq5kbxLkYY
+- Exercise 12: https://youtu.be/powU_XZuylU
+- Exercise 13: https://youtu.be/J48Am5fa27w
 
 ## Note
 The exercises focus on practical Python programming skills and include interactive elements for hands-on learning. Each exercise builds upon fundamental concepts while introducing new Python features and best practices.
