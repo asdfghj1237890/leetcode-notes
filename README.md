@@ -22,12 +22,28 @@ This repository contains Jupyter notebooks with coding exercises and their solut
 | Digital Check and Conversion | Check if digit and Convert uppercase | `digit.isdigit()` and `upper()` |
 | Built-in Conversion | Built-in base conversion function | `int('1A', 16)` |
 
+## String Handling Skills
+
+| Skill | Description | Example |
+|-------|-------------|---------|
+| String Slicing | Extract substring with indexes | `word[1:]` |
+| String Formatting | Format strings with f-strings | `f'{word}way'` |
+| String Splitting | Split string into list | `sentence.split()` |
+| String Joining | Join list into string | `' '.join(word_list)` |
+| Character Rotation | ROT13 encryption implementation | `chr(ord(c) + 13)` or `codecs.encode(word, 'rot13')` |
+| Case Conversion | Convert to lowercase | `word.lower()` |
+| String Sorting | Sort characters in string | `sorted('python')` |
+| Case-insensitive Sort | Sort with key function | `sorted(s, key=str.lower)` |
+
 ## Video References
 
 Each exercise includes a video tutorial for additional learning:
 - Exercise 01: https://youtu.be/KDMuGX9QtNI
 - Exercise 02: https://youtu.be/EDeZwyWfunM
 - Exercise 03: https://youtu.be/Vajtow2DG3g
+- Exercise 05: https://youtu.be/v4FxKzrBmNY
+- Exercise 06: https://youtu.be/BwN0MegOAsY
+- Exercise 08: https://youtu.be/wBn9m8wad0Y
 
 ## Note
 The exercises focus on practical Python programming skills and include interactive elements for hands-on learning. Each exercise builds upon fundamental concepts while introducing new Python features and best practices.
