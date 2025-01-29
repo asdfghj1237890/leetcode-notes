@@ -6,25 +6,21 @@ This repository contains Jupyter notebooks with coding exercises and their solut
 
 | Skill | Description | Example |
 |-------|-------------|---------|
-| User Input | 使用input()取得使用者輸入 | `user_guess = input('Guess a number: ')` |
-| Integer Conversion | 將字串轉換為整數 | `int(user_input)` |
-| Random Generation | 產生隨機整數 | `random.randint(0, 100)` |
-| While Loop Control | 帶有中斷條件的迴圈 | `while True: ... break` |
-| Input Validation | 驗證數字輸入 | `user_input.isdigit()` |
-| String Replacement | 字串替換操作 | `input_str.replace('.', '')` |
-| Variable Arguments | 接收可變數量參數 | `def my_sum(*numbers):` |
-| Tuple Iteration | 遍歷元組元素 | `for n in numbers:` |
-| Sum Initialization | 帶初始值的求和 | `sum([1,2,3], start=0)` |
-| Error Handling | 例外處理機制 | `try: ... except Exception:` |
-| Float Conversion | 浮點數轉換與運算 | `float(run_time)` |
-| Walrus Operator | 海象運算子(:=) | `while (run_time := input(...)):` |
-| String Reversal | 反轉字串順序 | `reversed(hexnum)` |
-| Index-Value Pairs | 取得索引值配對 | `enumerate(reversed(...))` |
-| ASCII Conversion | 字元ASCII值轉換 | `ord(char.upper()) - ord('A')` |
-| Hexadecimal Check | 十六進位字元驗證 | `digit.isdigit()` 與 `upper()` |
-| Base Calculation | 進位制數學運算 | `16 ** power` |
-| Built-in Conversion | 內建進位轉換函式 | `int('1A', 16)` |
-| Arithmetic Average | 基礎算術平均計算 | `total_time / number_of_runs` |
+| User Input | Get user input using input() | `user_guess = input('Guess a number: ')` |
+| Integer Conversion | Convert string to integer | `int(user_input)` |
+| Random Generation | Generate random integer | `random.randint(0, 100)` |
+| Input Validation | Validate numeric input | `user_input.isdigit()` |
+| String Replacement | String replacement operation | `input_str.replace('.', '')` |
+| Variable Arguments | Accept variable number of arguments | `def my_sum(*numbers):` |
+| Sum Initialization | Sum with initial value | `sum([1,2,3], start=0)` |
+| Error Handling | Exception handling mechanism | `try: ... except Exception:` |
+| Float Conversion | Float conversion and calculation | `float(run_time)` |
+| Walrus Operator | Walrus operator (:=) | `while (run_time := input(...)):` |
+| String Reversal | Reverse string order | `reversed(str)` |
+| Index-Value Pairs | Get index-value pairs | `enumerate(reversed(...))` |
+| ASCII Conversion | Character ASCII value conversion | `ord(char.upper())` |
+| Digital Check and Conversion | Check if digit and Convert uppercase | `digit.isdigit()` and `upper()` |
+| Built-in Conversion | Built-in base conversion function | `int('1A', 16)` |
 
 ## Video References
 
