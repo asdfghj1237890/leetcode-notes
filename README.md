@@ -52,9 +52,21 @@ This repository contains Jupyter notebooks with coding exercises and their solut
 | Element Counting | Count occurrences | `word.count(letter)` |
 | Counter Usage | Efficient frequency counting | `Counter('independence').most_common(1)` |
 
+## Dict & Set Skills
+
+| Skill | Description | Example |
+|-------|-------------|---------|
+| Safe Key Access | Get values without KeyError | `my_dict.get(key, default_none_value)` |
+| Default Dictionaries | Automatic key initialization | `from collections import defaultdict` |
+| Dictionary Views | Iterate key-value pairs | `for k, v in my_dict.items():` |
+| Set Uniqueness | Remove duplicate elements | `unique = set([1,2,2,3])` |
+| Key Collection | Get all dictionary keys | `my_dict.keys()` |
+| Set Operations | Mathematical set operations (|&^-) | `dict1.keys() | dict2.keys()` (union) |
+
 ## Video References
 
 Each exercise includes a video tutorial for additional learning:
+- Playlist: https://youtube.com/playlist?list=PLA5TE2ITfeXSNSoqvV8u4QZjOqfK1L-_W
 - Exercise 01: https://youtu.be/KDMuGX9QtNI
 - Exercise 02: https://youtu.be/EDeZwyWfunM
 - Exercise 03: https://youtu.be/Vajtow2DG3g
@@ -66,6 +78,10 @@ Each exercise includes a video tutorial for additional learning:
 - Exercise 11: https://youtu.be/nFq5kbxLkYY
 - Exercise 12: https://youtu.be/powU_XZuylU
 - Exercise 13: https://youtu.be/J48Am5fa27w
+- Exercise 14: https://youtu.be/wd8YQTFHLzM
+- Exercise 15: https://youtu.be/plARvm3RQXM
+- Exercise 16: https://youtu.be/iV_K14vT_ZQ
+- Exercise 17: https://youtu.be/eQnHwmXlPq4
 
 ## Note
 The exercises focus on practical Python programming skills and include interactive elements for hands-on learning. Each exercise builds upon fundamental concepts while introducing new Python features and best practices.
