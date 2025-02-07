@@ -61,7 +61,7 @@ This repository contains Jupyter notebooks with coding exercises and their solut
 | Dictionary Views | Iterate key-value pairs | `for k, v in my_dict.items():` |
 | Set Uniqueness | Remove duplicate elements | `unique = set([1,2,2,3])` |
 | Key Collection | Get all dictionary keys | `my_dict.keys()` |
-| Set Operations | Mathematical set operations (|&^-) | `dict1.keys() | dict2.keys()` (union) |
+| Set Operations | Mathematical set operations (`|`&^-) | `dict1.keys() | dict2.keys()` (union) |
 
 ## Video References
 
