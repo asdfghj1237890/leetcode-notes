@@ -63,6 +63,24 @@ This repository contains Jupyter notebooks with coding exercises and their solut
 | Key Collection | Get all dictionary keys | `my_dict.keys()` |
 | Set Operations | Mathematical set operations (\|&^-) | `dict1.keys() \| dict2.keys()` (union) |
 
+## File Handling Skills
+
+| Skill | Description | Example |
+|-------|-------------|---------|
+| File Opening | Open files with different modes | `open(filename, 'r')` |
+| Context Management | Automatic file closing | `with open(...) as f:` |
+| CSV Processing | Read/write CSV files | `csv.reader(f, delimiter=':')` |
+| JSON Handling | Parse and load JSON data | `json.load(json_file)` |
+| Batch Processing | Process multiple files | `os.listdir(dirname)` |
+| Path Manipulation | Combine file paths safely | `os.path.join(dirname, filename)` |
+| File Format Detection | Check file extensions | `filename.endswith('.json')` |
+| Memory Optimization | Read files line by line | `f.readline()` with walrus operator |
+| Pretty Printing | Format complex structures | `pprint.pprint(data, sort_dicts=False)` |
+| Delimiter Handling | Work with different separators | `csv_writer = csv.writer(f, delimiter='\t')` |
+| Newline Control | Manage line endings | `newline=''` in open() |
+| Data Serialization | Convert objects to JSON | `json.dump(data, file)` |
+| File Type Filtering | Select specific file types | `glob.glob('*.json')` |
+
 ## Video References
 
 Each exercise includes a video tutorial for additional learning:
@@ -82,6 +100,12 @@ Each exercise includes a video tutorial for additional learning:
 - Exercise 15: https://youtu.be/plARvm3RQXM
 - Exercise 16: https://youtu.be/iV_K14vT_ZQ
 - Exercise 17: https://youtu.be/eQnHwmXlPq4
+- Exercise 18: https://youtu.be/GC5yQg2odqI
+- Exercise 19: https://youtu.be/zktvhCOJPX0
+- Exercise 20: https://youtu.be/YCrV2_wO4Cc
+- Exercise 22: https://youtu.be/bSA1llDhX1I
+- Exercise 23: https://youtu.be/0jHBF9-V9G0
+
 
 ## Note
 The exercises focus on practical Python programming skills and include interactive elements for hands-on learning. Each exercise builds upon fundamental concepts while introducing new Python features and best practices.
