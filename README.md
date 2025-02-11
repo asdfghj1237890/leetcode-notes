@@ -81,6 +81,18 @@ This repository contains Jupyter notebooks with coding exercises and their solut
 | Data Serialization | Convert objects to JSON | `json.dump(data, file)` |
 | File Type Filtering | Select specific file types | `glob.glob('*.json')` |
 
+## Function Skills
+
+| Skill | Description | Example |
+|-------|-------------|---------|
+| Default Parameters | Set default parameter values | `def func(name='World')` |
+| Variable Scope | LEGB rule (Local, Enclosed, Global, Built-in) | `global`, `nonlocal` keywords |
+| Keyword Arguments | Accept arbitrary keyword arguments | `def func(**kwargs)` |
+| Function Dictionary | Store functions in dictionary | `ops = {'+': operator.add}` |
+| Operator Module | Use built-in operator functions | `import operator` |
+| Closure Functions | Remember enclosing scope | `def outer(): return inner` |
+| Function Factories | Generate functions dynamically | `def factory(): return lambda` |
+
 ## Video References
 
 Each exercise includes a video tutorial for additional learning:
@@ -105,7 +117,9 @@ Each exercise includes a video tutorial for additional learning:
 - Exercise 20: https://youtu.be/YCrV2_wO4Cc
 - Exercise 22: https://youtu.be/bSA1llDhX1I
 - Exercise 23: https://youtu.be/0jHBF9-V9G0
-
+- Exercise 25: https://youtu.be/cwm-UgM6oC4
+- Exercise 26: https://youtu.be/btf2V4oyYaE
+- Exercise 27: https://youtu.be/S6wIHzRhj8s
 
 ## Note
 The exercises focus on practical Python programming skills and include interactive elements for hands-on learning. Each exercise builds upon fundamental concepts while introducing new Python features and best practices.
