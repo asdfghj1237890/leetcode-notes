@@ -89,9 +89,28 @@ This repository contains Jupyter notebooks with coding exercises and their solut
 | Variable Scope | LEGB rule (Local, Enclosed, Global, Built-in) | `global`, `nonlocal` keywords |
 | Keyword Arguments | Accept arbitrary keyword arguments | `def func(**kwargs)` |
 | Function Dictionary | Store functions in dictionary | `ops = {'+': operator.add}` |
-| Operator Module | Use built-in operator functions | `import operator` |
-| Closure Functions | Remember enclosing scope | `def outer(): return inner` |
-| Function Factories | Generate functions dynamically | `def factory(): return lambda` |
+| Operator Module | Use built-in operator functions | `import operator; operator.add(2,3)` |
+| Lambda Functions | Anonymous functions for short operations | `lambda a, b: a + b` |
+| Closure Functions | Remember enclosing scope | `def outer(): def inner(): ...; return inner` |
+| Function Factories | Generate functions dynamically | `def factory(): return lambda x: x*2` |
+| Returning Functions | Return a function from another function | `return password_gen` |
+| Arbitrary Arguments | Accept variable number of arguments | `def my_sum(*numbers):` |
+| Dynamic Attribute Handling | Accept and use arbitrary keyword arguments | `def myxml(tag, content='', **kwargs): ...` |
+
+## Comprehension & Generator Skills
+
+| Skill | Description | Example |
+|-------|-------------|---------|
+| List Comprehension | Generate lists with expressions | `[abs(x) for x in numbers]` |
+| Nested List Comprehension | Flatten 2D lists | `[sub for row in data for sub in row]` |
+| Dict Comprehension | Generate dicts from iterables | `{k: v for k, v in pairs}` |
+| Set Comprehension | Generate sets from iterables | `{x for x in data}` |
+| Conditional Comprehension | Add if condition in comprehension | `[x for x in data if x > 0]` |
+| Filter Function | Filter elements with a function | `filter(str.isdigit, data)` |
+| Map Function | Apply function to all elements | `map(abs, numbers)` |
+| Generator Expression | Lazy evaluation of sequences | `(x*x for x in range(10))` |
+| File Processing with Comprehension | Process file lines/words | `' '.join([pl_word(w) for l in f for w in l.split()])` |
+| Dict/Set Flip | Flip dict keys and values | `{v: k for k, v in d.items()}` |
 
 ## Video References
 
@@ -102,7 +121,7 @@ Each exercise includes a video tutorial for additional learning:
 - Exercise 03: https://youtu.be/Vajtow2DG3g
 - Exercise 05: https://youtu.be/v4FxKzrBmNY
 - Exercise 06: https://youtu.be/BwN0MegOAsY
-- Exercise 08: https://youtu.be/wBn9m8wad0Y
+- Exercise 08: https://youtu.be/wBn9m8wad0YL
 - Exercise 09: https://youtu.be/teBer27fyek
 - Exercise 10: https://youtu.be/dGSrJzQHiqc
 - Exercise 11: https://youtu.be/nFq5kbxLkYY
