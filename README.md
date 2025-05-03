@@ -116,29 +116,38 @@ This repository contains Jupyter notebooks with coding exercises and their solut
 
 Each exercise includes a video tutorial for additional learning:
 - Playlist: https://youtube.com/playlist?list=PLA5TE2ITfeXSNSoqvV8u4QZjOqfK1L-_W
-- Exercise 01: https://youtu.be/KDMuGX9QtNI
-- Exercise 02: https://youtu.be/EDeZwyWfunM
-- Exercise 03: https://youtu.be/Vajtow2DG3g
-- Exercise 05: https://youtu.be/v4FxKzrBmNY
-- Exercise 06: https://youtu.be/BwN0MegOAsY
-- Exercise 08: https://youtu.be/wBn9m8wad0YL
-- Exercise 09: https://youtu.be/teBer27fyek
-- Exercise 10: https://youtu.be/dGSrJzQHiqc
-- Exercise 11: https://youtu.be/nFq5kbxLkYY
-- Exercise 12: https://youtu.be/powU_XZuylU
-- Exercise 13: https://youtu.be/J48Am5fa27w
-- Exercise 14: https://youtu.be/wd8YQTFHLzM
-- Exercise 15: https://youtu.be/plARvm3RQXM
-- Exercise 16: https://youtu.be/iV_K14vT_ZQ
-- Exercise 17: https://youtu.be/eQnHwmXlPq4
-- Exercise 18: https://youtu.be/GC5yQg2odqI
-- Exercise 19: https://youtu.be/zktvhCOJPX0
-- Exercise 20: https://youtu.be/YCrV2_wO4Cc
-- Exercise 22: https://youtu.be/bSA1llDhX1I
-- Exercise 23: https://youtu.be/0jHBF9-V9G0
-- Exercise 25: https://youtu.be/cwm-UgM6oC4
-- Exercise 26: https://youtu.be/btf2V4oyYaE
-- Exercise 27: https://youtu.be/S6wIHzRhj8s
+- Exercise 01: Warm-up----Number Guessing Game — https://youtu.be/KDMuGX9QtNI
+- Exercise 02: Sum a Series of Numbers — https://youtu.be/EDeZwyWfunM
+- Exercise 03: Calculate Average Running Time — https://youtu.be/Vajtow2DG3g
+- Exercise 04: Convert Hexadecimal to Decimal — (no video)
+- Exercise 05: Pig Latin — https://youtu.be/v4FxKzrBmNY
+- Exercise 06: Pig Latin - Sentence Translator — https://youtu.be/BwN0MegOAsY
+- Exercise 07: ROT13 Encryption — (no video)
+- Exercise 08: Character Sorting — https://youtu.be/wBn9m8wad0YL
+- Exercise 09: Extract and Combine First and Last Elements from Different Containers — https://youtu.be/teBer27fyek
+- Exercise 10: Universal Sum Function — https://youtu.be/dGSrJzQHiqc
+- Exercise 11: Sort Contact Information by Name — https://youtu.be/nFq5kbxLkYY
+- Exercise 12: Output Container Data with Formatting — https://youtu.be/powU_XZuylU
+- Exercise 13: Find Most Repeated Letter in a Word — https://youtu.be/J48Am5fa27w
+- Exercise 14: Restaurant Ordering System — https://youtu.be/wd8YQTFHLzM
+- Exercise 15: Rainfall Database — https://youtu.be/plARvm3RQXM
+- Exercise 16: Dictionary Key/Value Sorter — https://youtu.be/iV_K14vT_ZQ
+- Exercise 17: Compare Two Dictionaries — https://youtu.be/eQnHwmXlPq4
+- Exercise 18: Read the Last Line of a File — https://youtu.be/GC5yQg2odqI
+- Exercise 19: Extract Login Account Information — https://youtu.be/zktvhCOJPX0
+- Exercise 20: Count Characters, Words and Lines in a File — https://youtu.be/YCrV2_wO4Cc
+- Exercise 21: Find the Longest Word in a File — (no video)
+- Exercise 22: Reading and Writing CSV Files — https://youtu.be/bSA1llDhX1I
+- Exercise 23: Reading JSON Files — https://youtu.be/0jHBF9-V9G0
+- Exercise 25: XML Generator — https://youtu.be/cwm-UgM6oC4
+- Exercise 26: Simple Prefix Calculator — https://youtu.be/btf2V4oyYaE
+- Exercise 27: Custom Password Generator — https://youtu.be/S6wIHzRhj8s
+- Exercise 29: Sum Only Numbers in Data — https://youtu.be/GXK_RHEdv_s
+- Exercise 30: Flatten 2D List Using Nested List Comprehension — https://youtu.be/gYG9qZyIu0g
+- Exercise 31: Pig Latin - File Translator — https://youtu.be/0ui1zWaDSSU
+- Exercise 32: Flip a dict's keys and values — https://youtu.be/DDAYafF7KmQ
+- Exercise 35: Hebrew Number Cipher (Part I) — https://youtu.be/aBqi0HhBdiA
+- Exercise 35: Hebrew Number Cipher (Part II) — https://youtu.be/852LFBEK0BI
 
 ## Note
 The exercises focus on practical Python programming skills and include interactive elements for hands-on learning. Each exercise builds upon fundamental concepts while introducing new Python features and best practices.
