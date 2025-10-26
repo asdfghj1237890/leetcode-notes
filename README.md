@@ -106,6 +106,22 @@ This repository contains Jupyter notebooks with coding exercises and their solut
 | Package Structure | Create package with `__init__.py` and modules | `import tax.income_tax` |
 | Import Path | Temporarily extend module search path | `import sys; sys.path.append('./data')` |
 
+## Object & Class Skills
+
+| Skill | Description | Example |
+|-------|-------------|---------|
+| Class & self | Initialize instance attributes | `def __init__(self, flavor): self.flavor = flavor` |
+| Instance vs Class | Access class attribute from instances | `class Bowl: max_scoops = 3` |
+| __str__/__repr__ | Custom printable/representation of objects | `def __repr__(self): return f'Bowl(scoops={self.scoops})'` |
+| Inheritance & Override | Subclass and override attributes/methods | `class ExtraBowl(Bowl): max_scoops = 5` |
+| super() initializer | Call parent constructor to avoid duplication | `super().__init__(color, 4)` |
+| Class name lookup | Get class name of instance | `self.__class__.__name__` |
+| f-string !r | Use repr formatting for clarity | `f"{self.color!r}"` |
+| Subclass built-ins | Extend dict behavior safely | `class StrDict(dict): ...` |
+| Dunder method override | Intercept item set/get | `def __setitem__(self, k, v): ...` |
+| Nested comprehensions | Query across nested containers | `[a for ex in zoo.exhibits for a in ex.animals]` |
+| Aggregation | Compute totals across objects | `sum(a.leg_num for ex in zoo.exhibits for a in ex.animals)` |
+
 ## Comprehension & Generator Skills
 
 | Skill | Description | Example |
@@ -157,8 +173,17 @@ Each exercise includes a video tutorial for additional learning:
 - Exercise 32: Flip a dict's keys and values — https://youtu.be/DDAYafF7KmQ
 - Exercise 35: Hebrew Number Cipher (Part I) — https://youtu.be/aBqi0HhBdiA
 - Exercise 35: Hebrew Number Cipher (Part II) — https://youtu.be/852LFBEK0BI
- - Exercise 36: Income Tax Calculation Module — https://youtu.be/dGwEEiXqIQY
- - Exercise 37: Function Menu Module — https://youtu.be/Xe-HKd32DtY
+- Exercise 36: Income Tax Calculation Module — https://youtu.be/dGwEEiXqIQY
+- Exercise 37: Function Menu Module — https://youtu.be/Xe-HKd32DtY
+
+- Exercise 38: Ice Cream Scoop — https://youtu.be/uAItLgO0hCc
+- Exercise 39: Ice Cream Bowl — https://youtu.be/PevJYLbs4vk
+- Exercise 40: Class Attribute - Ice Cream Bowl Limit — https://youtu.be/HTUbvK7Vlbs
+- Exercise 41: Extra Large Ice Cream Bowl — https://youtu.be/q7XO4knadH4
+- Exercise 42: Custom dict with String Keys — https://youtu.be/OSkaqQ5Ukg4
+- Exercise 43: Animal Class — https://youtu.be/or0UPz7QL8U
+- Exercise 44: Animal Exhibition Area Class — https://youtu.be/6dBzsZUZOy8
+- Exercise 45: Zoo Class — https://youtu.be/44vHQ5l4u3s
 
 ## Note
 The exercises focus on practical Python programming skills and include interactive elements for hands-on learning. Each exercise builds upon fundamental concepts while introducing new Python features and best practices.
