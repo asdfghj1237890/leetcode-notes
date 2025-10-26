@@ -152,6 +152,15 @@ http://pgbovine.net
 | File Processing with Comprehension | Process file lines/words | `' '.join([pl_word(w) for l in f for w in l.split()])` |
 | Dict/Set Flip | Flip dict keys and values | `{v: k for k, v in d.items()}` |
 
+## Appendix A - Additional Skills
+
+| Skill | Description | Example |
+|-------|-------------|---------|
+| Combinations (itertools) | List all 2-combinations; useful for pair checks | `from itertools import combinations; list(combinations(data, 2))` |
+| Counter.most_common | Get most frequent element efficiently | `from collections import Counter; Counter(data).most_common(1)[0][0]` |
+| Set subtraction | Find missing numbers from 1..n via set difference | `set(range(1, len(data)+1)) - set(data)` |
+| Stack via list/subclass | Use list methods or subclass list for stack ops | `stack = []; stack.append(x); stack.pop()` |
+
 ## Video References
 
 Each exercise includes a video tutorial for additional learning:
