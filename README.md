@@ -2,6 +2,9 @@
 
 This repository contains Jupyter notebooks with coding exercises and their solutions, inspired by and adapted from Reuven M. Lerner's "Python Workout: 50 ten-minute exercises". Below is a summary of the exercises and key skills demonstrated.
 
+## Python Tutor
+http://pgbovine.net
+
 ## Digital Handling Skills
 
 | Skill | Description | Example |
@@ -122,6 +125,18 @@ This repository contains Jupyter notebooks with coding exercises and their solut
 | Nested comprehensions | Query across nested containers | `[a for ex in zoo.exhibits for a in ex.animals]` |
 | Aggregation | Compute totals across objects | `sum(a.leg_num for ex in zoo.exhibits for a in ex.animals)` |
 
+## Iterator & Generator Skills
+
+| Skill | Description | Example |
+|-------|-------------|---------|
+| Iterator Protocol | Implement `__iter__` and `__next__`; raise `StopIteration` to end | `class MyEnumerate: def __iter__(self): return self; def __next__(self): ...` |
+| Separate Iterator Class | Return a fresh iterator each time to avoid shared state | `class CycleList: def __iter__(self): return CycleIterator(data, n)` |
+| Cycling with Modulo | Loop over data repeatedly using modular index | `value = data[i % len(data)]` |
+| Generator Function | Use `yield` to lazily produce values | `def word_generator(f, n): ... yield word` |
+| Early Termination | Stop a generator with `return` when a limit is reached | `if count >= n: return` |
+| Generator Expression | Inline lazy sequence construction | `(int(d) for d in str(num) if d.isnumeric())` |
+| Stateful Infinite Generator | Preserve state between yields for ongoing values | `def elapsed_time_gen(): yield now - last` |
+
 ## Comprehension & Generator Skills
 
 | Skill | Description | Example |
@@ -175,7 +190,6 @@ Each exercise includes a video tutorial for additional learning:
 - Exercise 35: Hebrew Number Cipher (Part II) — https://youtu.be/852LFBEK0BI
 - Exercise 36: Income Tax Calculation Module — https://youtu.be/dGwEEiXqIQY
 - Exercise 37: Function Menu Module — https://youtu.be/Xe-HKd32DtY
-
 - Exercise 38: Ice Cream Scoop — https://youtu.be/uAItLgO0hCc
 - Exercise 39: Ice Cream Bowl — https://youtu.be/PevJYLbs4vk
 - Exercise 40: Class Attribute - Ice Cream Bowl Limit — https://youtu.be/HTUbvK7Vlbs
@@ -184,6 +198,11 @@ Each exercise includes a video tutorial for additional learning:
 - Exercise 43: Animal Class — https://youtu.be/or0UPz7QL8U
 - Exercise 44: Animal Exhibition Area Class — https://youtu.be/6dBzsZUZOy8
 - Exercise 45: Zoo Class — https://youtu.be/44vHQ5l4u3s
+- Exercise 46: Custom Iterable Container — https://youtu.be/8p5CMpWh1KM
+- Exercise 47: Cycle Iterator — https://youtu.be/4GLb_bYC9wA
+- Exercise 48: File Word Generator — (no video)
+- Exercise 49: Generator Expressions — (no video)
+- Exercise 50: Elapsed Time Generator — https://youtu.be/qof3fxYBn8U
 
 ## Note
 The exercises focus on practical Python programming skills and include interactive elements for hands-on learning. Each exercise builds upon fundamental concepts while introducing new Python features and best practices.
