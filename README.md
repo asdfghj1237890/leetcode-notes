@@ -97,6 +97,15 @@ This repository contains Jupyter notebooks with coding exercises and their solut
 | Arbitrary Arguments | Accept variable number of arguments | `def my_sum(*numbers):` |
 | Dynamic Attribute Handling | Accept and use arbitrary keyword arguments | `def myxml(tag, content='', **kwargs): ...` |
 
+## Module & Package Skills
+
+| Skill | Description | Example |
+|-------|-------------|---------|
+| Type Validation | Validate numeric input types | `if not isinstance(amount, (int, float)): raise ValueError('amount')` |
+| Decimal Arithmetic | Precise monetary calculations | `from decimal import Decimal; Decimal('0.2')` |
+| Package Structure | Create package with `__init__.py` and modules | `import tax.income_tax` |
+| Import Path | Temporarily extend module search path | `import sys; sys.path.append('./data')` |
+
 ## Comprehension & Generator Skills
 
 | Skill | Description | Example |
@@ -148,6 +157,8 @@ Each exercise includes a video tutorial for additional learning:
 - Exercise 32: Flip a dict's keys and values — https://youtu.be/DDAYafF7KmQ
 - Exercise 35: Hebrew Number Cipher (Part I) — https://youtu.be/aBqi0HhBdiA
 - Exercise 35: Hebrew Number Cipher (Part II) — https://youtu.be/852LFBEK0BI
+ - Exercise 36: Income Tax Calculation Module — https://youtu.be/dGwEEiXqIQY
+ - Exercise 37: Function Menu Module — https://youtu.be/Xe-HKd32DtY
 
 ## Note
 The exercises focus on practical Python programming skills and include interactive elements for hands-on learning. Each exercise builds upon fundamental concepts while introducing new Python features and best practices.
