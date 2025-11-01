@@ -2,6 +2,8 @@
 
 This repository contains Jupyter notebooks with coding exercises and their solutions, inspired by and adapted from Reuven M. Lerner's "Python Workout: 50 ten-minute exercises". Below is a summary of the exercises and key skills demonstrated.
 
+> **📝 Note for Readers**: This is a quick-reference guide. Some examples are simplified for clarity. In production code, always add proper error handling, type hints, and edge case validation.
+
 ## Python Tutor
 http://pgbovine.net
 
@@ -16,10 +18,10 @@ http://pgbovine.net
 | String Replacement | String replacement operation | `input_str.replace('.', '')` |
 | Variable Arguments | Accept variable number of arguments | `def my_sum(*numbers):` |
 | Sum Initialization | Sum with initial value | `sum([1,2,3], start=0)` |
-| Error Handling | Exception handling mechanism | `try: ... except Exception:` |
+| Error Handling | Exception handling mechanism | `try: ... except ValueError:` (⚠️ catch specific exceptions) |
 | Float Conversion | Float conversion and calculation | `float(run_time)` |
 | Walrus Operator | Walrus operator (:=) | `while (run_time := input(...)):` |
-| String Reversal | Reverse string order | `reversed(str)` |
+| String Reversal | Reverse string order | `''.join(reversed(s))` or `s[::-1]` |
 | Index-Value Pairs | Get index-value pairs | `enumerate(reversed(...))` |
 | ASCII Conversion | Character ASCII value conversion | `ord(char.upper())` |
 | Digital Check | Check if digit | `digit.isdigit()` |
@@ -43,8 +45,8 @@ http://pgbovine.net
 | Skill | Description | Example |
 |-------|-------------|---------|
 | Sequence Slicing | Get first/last elements | `seq[:1] + seq[-1:]` |
-| List Memory Allocation | Dynamic memory management | `list.append(item)` will add memory space when the existing space is not enough |
-| Tuple Efficiency | Fixed-size memory allocation | `tuple_data = (1,2,3)` is fixed size when it is created |
+| List Memory Allocation | Dynamic memory management | Lists grow dynamically; `append()` is amortized O(1) |
+| Tuple Efficiency | Fixed-size, immutable | Tuples are faster for read-only data; use for immutable sequences |
 | Container Checking | Check if container is empty | `if not items:` |
 | Dictionary Merging | Combine dictionaries | `{**d1, **d2}` |
 | Type Checking | Verify data type | `isinstance(item, dict)` |
@@ -59,8 +61,8 @@ http://pgbovine.net
 
 | Skill | Description | Example |
 |-------|-------------|---------|
-| Safe Key Access | Get values without KeyError | `my_dict.get(key, default_none_value)` |
-| Default Dictionaries | Automatic key initialization | `from collections import defaultdict` |
+| Safe Key Access | Get values without KeyError | `my_dict.get(key, default_value)` returns `None` if unspecified |
+| Default Dictionaries | Automatic key initialization | `defaultdict(list)` or `defaultdict(int)` auto-creates keys |
 | Dictionary Views | Iterate key-value pairs | `for k, v in my_dict.items():` |
 | Set Uniqueness | Remove duplicate elements | `unique = set([1,2,2,3])` |
 | Key Collection | Get all dictionary keys | `my_dict.keys()` |
@@ -221,5 +223,36 @@ Each exercise includes a video tutorial for additional learning:
 
 ## Note
 The exercises focus on practical Python programming skills and include interactive elements for hands-on learning. Each exercise builds upon fundamental concepts while introducing new Python features and best practices.
+
+---
+
+## 🔍 Additional Review Comments
+
+### Missing Topics (Consider Adding):
+1. **Type Hints** - Modern Python best practice: `def func(x: int) -> str:`
+2. **Decorators** - Essential for real-world Python: `@property`, `@staticmethod`, custom decorators
+3. **Context Managers** - Custom `__enter__`/`__exit__` for resource management
+4. **Dataclasses** - Simplify class definitions: `@dataclass`
+5. **asyncio** - Asynchronous programming basics
+6. **Testing** - `pytest`, `unittest`, `doctest`
+7. **Logging** - Better than print: `import logging`
+8. **Regular Expressions** - `re` module for pattern matching
+9. **Pathlib** - Modern path handling: `Path` instead of `os.path`
+10. **Virtual Environments** - `venv`, `pip`, requirements.txt
+
+### Style Recommendations:
+- Use **PEP 8** naming conventions consistently
+- Add **docstrings** to all functions/classes
+- Prefer **explicit over implicit** (e.g., return `None` explicitly)
+- Use **f-strings** over `%` or `.format()` (already covered ✓)
+- Follow **"ask for forgiveness"** (try/except) vs **"look before you leap"** (if checks) where appropriate
+
+### Performance Tips to Add:
+- List comprehensions > for loops (already covered ✓)
+- Use `set` for membership testing: `if x in my_set:` is O(1)
+- Generator expressions for large datasets (already covered ✓)
+- `collections.Counter` for counting (already covered ✓)
+- `bisect` module for sorted lists
+- `functools.lru_cache` for memoization
 
 
