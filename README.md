@@ -33,7 +33,7 @@ http://pgbovine.net
 | String Formatting | Format strings with f-strings | `f'{word}way'` |
 | String Splitting | Split string into list | `sentence.split()` |
 | String Joining | Join list into string | `' '.join(word_list)` |
-| Character Rotation | ROT13 encryption implementation | `chr(ord(c) + 13)` or `codecs.encode(word, 'rot13')` |
+| Character Rotation | ROT13 encryption implementation | `chr((ord(c.upper()) - 65 + 13) % 26 + 65)` or `codecs.encode(word, 'rot13')` |
 | Case Conversion | Convert to lowercase | `word.lower()` |
 | String Sorting | Sort characters in string | `sorted('python')` |
 | Case-insensitive Sort | Sort with key function | `sorted(s, key=str.lower)` |
@@ -157,8 +157,8 @@ http://pgbovine.net
 | Skill | Description | Example |
 |-------|-------------|---------|
 | Combinations (itertools) | List all 2-combinations; useful for pair checks | `from itertools import combinations; list(combinations(data, 2))` |
-| Counter.most_common | Get most frequent element efficiently | `from collections import Counter; Counter(data).most_common(1)[0][0]` |
-| Set subtraction | Find missing numbers from 1..n via set difference | `set(range(1, len(data)+1)) - set(data)` |
+| Counter.most_common | Get most frequent element efficiently | `Counter(data).most_common(1)[0]` returns `(element, count)` tuple |
+| Set subtraction | Find missing numbers from 1..n via set difference | `set(range(1, len(data)+2)) - set(data)` for missing in [1..n+1] |
 | Stack via list/subclass | Use list methods or subclass list for stack ops | `stack = []; stack.append(x); stack.pop()` |
 | Bracket validation (stack) | Validate parentheses/brackets using push/pop | `stack and b == stack.pop()` |
 | Move zeroes to end | Shift all zeroes to the list's end | `for _ in range(data.count(0)): data.remove(0); data.append(0)` |
