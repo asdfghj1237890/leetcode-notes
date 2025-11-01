@@ -160,6 +160,12 @@ http://pgbovine.net
 | Counter.most_common | Get most frequent element efficiently | `from collections import Counter; Counter(data).most_common(1)[0][0]` |
 | Set subtraction | Find missing numbers from 1..n via set difference | `set(range(1, len(data)+1)) - set(data)` |
 | Stack via list/subclass | Use list methods or subclass list for stack ops | `stack = []; stack.append(x); stack.pop()` |
+| Bracket validation (stack) | Validate parentheses/brackets using push/pop | `stack and b == stack.pop()` |
+| Move zeroes to end | Shift all zeroes to the list's end | `for _ in range(data.count(0)): data.remove(0); data.append(0)` |
+| Common prefix (zip) | Use zip to align chars; stop at first mismatch | `"".join(c[0] for c in zip(*strs) if len(set(c)) == 1)` |
+| Reverse integer digits | Reverse digits with slicing and preserve sign | `int(str(abs(x))[::-1]) * (1 if x >= 0 else -1)` |
+| Reverse 8-bit binary | Format to 8 bits, reverse, parse base 2 | `int(f'{n:08b}'[::-1], 2)` |
+| Roman numerals to int | Sum symbols plus subtractive pairs | `sum(roman[c] for c in s) + sum(v for k, v in special.items() if k in s)` |
 
 ## Video References
 
